@@ -14,8 +14,8 @@ function App() {
   useEffect(() => {
     const fetch = async () => {
       const fetchURL = query.length 
-        ? `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${query}&limit=4` 
-        : `https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=4`
+        ? `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${query}&limit=3` 
+        : `https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=3`
 
       const [data,error] = await handleFetch(fetchURL)
 
